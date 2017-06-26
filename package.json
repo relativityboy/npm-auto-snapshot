@@ -1,0 +1,15 @@
+{
+  "name": "npm-auto-snaphot",
+  "version": "1.0.0",
+  "description": "Bump your snapshot with the epoch. Keep snapshots out of production.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin":{
+    "npm_update_snapshot":"./bin/npm_update_snapshot.js",
+    "npm_check_no_snapshots":"./bin/npm_check_no_snapshots.js"
+  },
+  "author": "Donovan Walker",
+  "license": "ISC"
+}
