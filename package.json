@@ -1,6 +1,6 @@
 {
-  "name": "npm-auto-snaphot",
-  "version": "1.0.0",
+  "name": "npm-auto-snapshot",
+  "version": "0.5.0",
   "description": "Bump your snapshot with the epoch. Keep snapshots out of production.",
   "main": "src/app.js",
   "scripts": {

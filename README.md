@@ -12,7 +12,7 @@ globally for use across multiple projects.
 There are two cli commands available. Call them in a directory with the relevant package.json file,
 or pass the path to the package.json file.
 
-#### npm_update_snapshot
+#### \>> npm_update_snapshot
 
 This command updates the current version of a package.json file to x.y.z-SNAPSHOT.<epoch>
 
@@ -27,7 +27,7 @@ When called within the same directory as the package.json file you wish to modif
 this command needs no arguments.
 Alternatively, you may pass a relative or absolute path to the package.json or its directory.
 
-#### npm_check_no_snapshots
+#### \>> npm_check_no_snapshots
 This command scans a package.json file for a version or dependencies ending in /-SNAPSHOT(\.\d+)?$/
 If any are found it throws an exception.
 
