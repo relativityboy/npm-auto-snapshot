@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/relativityboy/bonmot.git"
+    "url": "git+https://github.com/relativityboy/npm-auto-snapshot"
   },
   "keywords": [
     "jenkins",
