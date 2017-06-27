@@ -61,11 +61,12 @@ exports.noSnapshotScan = function(filePath, log) {
     if(errors.length > 0) {
         fnLog("***Snapshot Dependencies found:")
         for(i = 0; i < errors.length; i++) {
-            log(errors[i]);
+            fnLog(errors[i]);
         }
         fnLog("***");
         throw new Error("Snapshot Dependencies found!");
     }
     fnLog("No snapshots found. (Checked version, dependencies, devDependencies)");
+    return true;
 };
 

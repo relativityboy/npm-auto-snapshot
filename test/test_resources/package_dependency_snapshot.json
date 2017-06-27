@@ -28,10 +28,12 @@
   ],
   "author": "Donovan Walker",
   "license": "ISC",
+  "dependencies": {
+    "istanbul": "^0.4.5-SNAPSHOT.1498536646565"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.12.0",
-    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2"
   }
