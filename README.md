@@ -1,4 +1,6 @@
 ## npm-auto-snapshot
+[![Build Status](https://travis-ci.org/relativityboy/npm-auto-snapshot.svg?branch=master)](https://travis-ci.org/relativityboy/npm-auto-snapshot)
+[![Coverage Status](https://coveralls.io/repos/github/relativityboy/npm-auto-snapshot/badge.svg?branch=master)](https://coveralls.io/github/relativityboy/npm-auto-snapshot?branch=master)
 
 This package was inspired by [npm-snapshot](https://www.npmjs.com/package/npm-snapshot) but automates versioning and adds several features, 
 including a version check for production builds. 
