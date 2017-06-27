@@ -1,6 +1,6 @@
 {
   "name": "npm-auto-snapshot",
-  "version": "0.5.3",
+  "version": "0.5.3-SNAPSHOT.1498536646565",
   "description": "Bump your snapshot with the epoch. Keep snapshots out of production.",
   "main": "src/app.js",
   "scripts": {
@@ -8,9 +8,9 @@
     "ist": "istanbul cover --report html node_modules/.bin/_mocha -- --reporter spec",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
-  "bin":{
-    "npm_update_snapshot":"./bin/npm_update_snapshot.js",
-    "npm_check_no_snapshots":"./bin/npm_check_no_snapshots.js"
+  "bin": {
+    "npm_update_snapshot": "./bin/npm_update_snapshot.js",
+    "npm_check_no_snapshots": "./bin/npm_check_no_snapshots.js"
   },
   "repository": {
     "type": "git",

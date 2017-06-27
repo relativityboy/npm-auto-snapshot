@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const app = require('../src/app');
 
-var filePath = process.cwd()
-console.log(process.argv.length)
+var filePath = process.cwd();
+
 if (process.argv.length >= 3) {
     if ('/' !== process.argv[2][0]) {
         filePath = filePath + '/' + process.argv[2];

@@ -17,6 +17,7 @@ const fnEndsWithSnapshot = function(str) {
 }
 
 exports.snapshotUpdate = function(filePath, log) {
+    const fnLog = (typeof log === "function")? log : console.log;
     const package = fnLoadPackage((filePath));
     const version = fnEndsWithSnapshot(package.version);
     if(!version) {
@@ -28,12 +29,14 @@ exports.snapshotUpdate = function(filePath, log) {
 
     package.version = version + '-SNAPSHOT.' + Date.now();
 
-    fs.writeFile(filePath, JSON.stringify(package, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(package, null, 2));
 
-    log("Updated package version to: " + package.version);
+    fnLog("Updated package version to: " + package.version);
+    return package.version;
 };
 
 exports.noSnapshotScan = function(filePath, log) {
+    const fnLog = (typeof log === "function")? log : console.log;
     const package = fnLoadPackage(filePath);
     const errors = [];
     var i;
@@ -56,12 +59,13 @@ exports.noSnapshotScan = function(filePath, log) {
         }
     }
     if(errors.length > 0) {
-        log("***Snapshot Dependencies found:")
+        fnLog("***Snapshot Dependencies found:")
         for(i = 0; i < errors.length; i++) {
             log(errors[i]);
         }
-        log("***");
+        fnLog("***");
         throw new Error("Snapshot Dependencies found!");
     }
-    log("No snapshots found. (Checked version, dependencies, devDependencies)");
-}
+    fnLog("No snapshots found. (Checked version, dependencies, devDependencies)");
+};
+
